@@ -15,7 +15,7 @@ import {new_acc, login_attempt, send_cookies, logout, save_set, send_sets, load_
 import cors from 'cors';
 const corsOptions = {
     //make sure you delete the extra slash at the end:
-    origin: ["http://localhost:3000","http://localhost:5173", "https://language-learning-blush.vercel.app", "language-learning-integrated.vercel.app"],
+    origin: ["http://localhost:3000","http://localhost:5173", "https://language-learning-two.vercel.app"],
     credentials: true //be able to send cookies
 };
 
