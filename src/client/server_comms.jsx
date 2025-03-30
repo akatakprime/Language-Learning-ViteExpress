@@ -9,7 +9,6 @@ const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 var proxyURL = import.meta.env.VITE_PROXY_URL;
 
 console.log("Making requests with: ", SERVER_URL, proxyURL)
-proxyURL="/";
 
 //FORM DATA
 export async function send_creds(page) {

@@ -17,7 +17,8 @@ import {new_acc, login_attempt, send_cookies, logout, save_set, send_sets, load_
 import cors from 'cors';
 const corsOptions = {
     //make sure you delete the extra slash at the end:
-    origin: ["http://localhost:3000","http://localhost:5173", "https://language-learning-two.vercel.app"],
+    //origin: ["http://localhost:3000","http://localhost:5173", "https://language-learning-two.vercel.app"],
+    origin: *,
     credentials: true //be able to send cookies
 };
 
@@ -31,14 +32,14 @@ app.get("/hello", (req, res) => {
 });
 
 //ROUTING
-app.post('/new', jsonParser, new_acc);
-app.post('/login', jsonParser, login_attempt);
-app.post('/save_set', jsonParser, save_set);
-app.post('/load_set', jsonParser, load_set);
+app.post('/api/new', jsonParser, new_acc);
+app.post('/api/login', jsonParser, login_attempt);
+app.post('/api/save_set', jsonParser, save_set);
+app.post('/api/load_set', jsonParser, load_set);
 
-app.get('/cookies', send_cookies);
-app.get('/logout', logout);
-app.get('/get_sets', send_sets);
+app.get('/api/cookies', send_cookies);
+app.get('/api/logout', logout);
+app.get('/api/get_sets', send_sets);
 
 ViteExpress.listen(app, 443, () =>
   console.log("Server is listening on port 443..."),
