@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 //.env variable used by vite must be prefixed with VITE_
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
+SERVER_URL = "";
+
 var proxyURL = import.meta.env.VITE_PROXY_URL;
 
 console.log("Making requests with: ", SERVER_URL, proxyURL)
