@@ -152,6 +152,7 @@ export async function send_cookies(req, res) {
     try {
         //two cookies: user_data and token
         //we send back user data
+        console.log("Cookies request! ", req.cookies)
         const user_data = req.cookies.user_data;
         const user_id = await getUserID(req); //will throw an error if no valid user IDs are found
         res.send(user_data);
