@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 //vite doesn't use dotenv
 //.env variable used by vite must be prefixed with VITE_
-const SERVER_URL = import.meta.env.VITE_SERVER_URL;
+var SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 SERVER_URL = "";
 
