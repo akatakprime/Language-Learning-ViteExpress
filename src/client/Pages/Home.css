@@ -1,0 +1,46 @@
+@font-face {
+  font-family: montserrat;
+  src: url('../../Montserrat-Regular.ttf');
+}
+
+.main {
+	text-align: center;
+}
+
+#flexbox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 100px;
+	margin-left: 0px;
+
+	align-items: center;
+	gap: 10px;
+
+	text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.content {
+	flex: 1; /*let all items inside be of the same length, regardless of content*/
+	max-width: fit-content;
+	/*border: 1px solid orangered;*/
+}
+
+.dummy {
+	flex: 0;
+	transition: flex 1s;
+	/*border: 1px solid limegreen;*/
+}
+
+.FlexAuto {
+	flex: auto;
+}
+
+.rightmargin {
+	margin-right: 150px;
+	margin-top: 60px;
+}

@@ -1,0 +1,139 @@
+#flexbox-flashcards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*margin-top: 20px;*/
+
+	align-items: center;
+	gap: 30px;
+}
+
+.flashcard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	box-shadow:	0 12px 16px 0 rgba(0,0,0,0.5),0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: white;
+	height: 100%;
+	width: 100%;
+}
+
+.flashcard input {
+	text-align: left;
+	width: 90%;
+	height: 40px;
+	border-bottom: 1px solid;
+	outline:none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-bottom: -1px;
+	margin-bottom: 10px;
+}
+
+#set-title {
+	text-align: left;
+	padding-left: 15px;
+}
+
+.h1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	gap:20px;
+
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.desc {
+	text-align: left;
+	margin-left: 22px;
+}
+
+.flashcard div {
+	width: 100%;
+}
+
+.side-button {
+	position: fixed;
+	right:150px;
+
+	width: 100px;
+	height: 100px;
+
+	border: none;
+	border-radius: 20px;
+	align-items: center;
+	cursor: pointer;
+
+	transition: all 300ms ease;
+}
+
+.side-button:hover {
+	transform: translateY(5px);
+	transform: translateX(5px);
+	outline:none;
+	
+}
+
+#save-set {
+	top:320px;
+	background-color: #e3e0cc;
+	box-shadow: 5px 5px #afad9c;
+	color:black;
+}
+
+#save-set:hover {
+	box-shadow: none;
+	background-color: #afad9c;
+	color:white;
+}
+
+#save-set label {
+	cursor: pointer;
+	font-size: 30px;
+	text-align: center;
+}
+
+#new-flashcard {
+	top:200px;
+	background-color: #c5d5c5;
+	box-shadow: 5px 5px #9fa9a3;
+}
+
+#new-flashcard:hover {
+	box-shadow: none;
+	background-color: #9fa9a3;
+}
+
+#new-flashcard label {
+	cursor: pointer;
+	color:white;
+	font-size: 60px;
+	text-align: center;
+}
+
+#remove {
+	position: relative;
+	height: 40px;
+	width: 40px;
+	outline: none;
+	border: 1px solid darkgray;
+	border-radius: 10px	;
+	top: 25px;
+	right: -250px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.hovertrigger {
+	width: 500px;
+	height: 200px;
+}

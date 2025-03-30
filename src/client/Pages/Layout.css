@@ -1,0 +1,35 @@
+#navbar {
+	position:absolute;
+	top: 10px;
+	left: 30px;
+
+	/*flexbox*/
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: flex-start;
+	gap: 30px;
+
+}
+
+/*<Link> is actually an <a></a> tag*/
+a {
+	text-decoration: none;
+}
+
+#outlet {
+	position: relative;
+	top: 40px;
+}
+
+.link {
+	color: darkcyan;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.link:hover {
+	border-color: darkcyan;
+}
